@@ -1,8 +1,8 @@
 Author : Bongolethu Fumbatha
 
 
-NB: The comment types
-    // TODO : this class would also include async generic calls,
+NB: comment types
+    // TODO : this class would also include async calls,
 	/// over a scope
 	No real error handling, just try and catch
 	No Unit testing both for the api and app
