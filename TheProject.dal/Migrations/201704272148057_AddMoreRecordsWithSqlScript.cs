@@ -12,8 +12,14 @@ namespace TheProject.dal.Migrations
         public override void Up()
         {
             StringBuilder strSql = new StringBuilder();
-            strSql.Append("INSERT INTO TREE(PARENTID, DESCRIPTION)");
-            strSql.Append("VALUES(1, 'Rap')                   ");
+
+            strSql.Append("INSERT INTO[dbo].[Tree] (PARENTID, DESCRIPTION)");
+            strSql.Append("VALUES(0, 'Music')     ");
+            strSql.Append(",(0, 'Movies')         ");
+            strSql.Append(",(2, 'Comedy')         ");
+            strSql.Append(",(2, 'Horror')         ");
+            strSql.Append(", (1, 'Jazz')          ");
+            strSql.Append(",(1, 'Rap')                   ");
 
             Sql(strSql.ToString());
 
@@ -21,12 +27,7 @@ namespace TheProject.dal.Migrations
 
         public override void Down()
         {
-            StringBuilder strSql = new StringBuilder();
-            strSql.Append("DELETE FROM TREE");
-            strSql.Append("WHERE DESCRIPTION = 'Rap'),         ");
-            strSql.Append(" AND PARENTID = 1                     ");
-
-            Sql(strSql.ToString());
+           //TODO : ROLLBACK
         }
     }
 }

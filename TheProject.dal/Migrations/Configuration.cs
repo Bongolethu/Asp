@@ -14,20 +14,24 @@ namespace TheProject.dal.Migrations
             AutomaticMigrationsEnabled = false;
           
         }
-        //
+        /// <summary>
+        /// Alternative to sql in migration
+        /// </summary>
+        /// <param name="context"></param>
         protected override void Seed(TheProject.dal.TheProjectContext context)
         {
-            var treeItems = new List<Tree>
-            {
-                new Tree {ParentId = 0, Description = "Music" },
-                new Tree {ParentId = 0, Description = "Movies" },
-                new Tree {ParentId = 2, Description = "Comedy" },
-                new Tree {ParentId = 2, Description = "Horror" },
-                new Tree {ParentId = 1, Description = "Jazz" }
-            };
 
-            treeItems.ForEach(s => context.Tree.AddOrUpdate(p => p.Description,s));
-            context.SaveChanges();
+            //var treeItems = new List<Tree>
+            //{
+            //    new Tree {ParentId = 0, Description = "Music" },
+            //    new Tree {ParentId = 0, Description = "Movies" },
+            //    new Tree {ParentId = 2, Description = "Comedy" },
+            //    new Tree {ParentId = 2, Description = "Horror" },
+            //    new Tree {ParentId = 1, Description = "Jazz" }
+            //};
+
+            //treeItems.ForEach(s => context.Tree.AddOrUpdate(p => p.Description,s));
+            //context.SaveChanges();
         }
     }
 }

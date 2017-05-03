@@ -1,6 +1,5 @@
 Author : Bongolethu Fumbatha
 
-
 NB: comment types
     // TODO : this class would also include async calls,
 	/// over a scope
