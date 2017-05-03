@@ -1,6 +1,5 @@
 Author : Bongolethu Fumbatha
-Description : This app is for the Sage Assessment provided by EOH
-sworn affidavit : This is my work and i had no assistance from anyone building this assessment
+
 
 NB: The comment types
     // TODO : this class would also include async generic calls,
