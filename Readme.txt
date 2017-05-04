@@ -12,7 +12,7 @@ NB: comment types
 3. On the top of a class there is a summary comment if needed /// over a scope
 
 4. The DAL is Entity Framework Code First
-  4.1 The connection String point to [WIN-IVSX0SEW4J\SQLSERVERDEV] make a change on the App Config 
+  4.1 The connection String point to [WIN-\SQLSERVERDEV] make a change on the App Config 
       to point it to your local. both Api WebConfig and DAL
   4.2  The get GetByParentIdAsync is soley for demo perposes
 5. The Core is the Common Data, Constants, Entity ExtentionMethods etc.
